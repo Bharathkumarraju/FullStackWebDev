@@ -1,9 +1,12 @@
 var readlineSync =  require('readline-sync')
-var score = 0 
+var score = 0
 
-var userAge = readlineSync.question('Are you older than 25? ');
+
+var question1 = "Are you older than 25? "
+var answerOne = "yes" 
+var userAge = readlineSync.question(question1);
 console.log("You entered is " + userAge)
-if(userAge === 'yes'){
+if(userAge === answerOne){
     console.log("you are right")
     score = score + 1
     console.log("Score is " + score)
@@ -13,9 +16,11 @@ if(userAge === 'yes'){
     console.log("Score is "+ score)
 }
 
-var knowAWS =  readlineSync.question('do you know AWS? ')
+var question2 = "do you know AWS? "
+var answerTwo = "yes" 
+var knowAWS =  readlineSync.question(question2)
 console.log("you entered " + knowAWS)
-if(knowAWS === "yes") {
+if(knowAWS === answerTwo) {
     console.log(knowAWS + " you know AWS!!!")
     score = score + 1
     console.log("Score is "+score)
@@ -25,9 +30,11 @@ if(knowAWS === "yes") {
     console.log("Score is " + score)
 }
 
-var knowGCP = readlineSync.question('do you know GCP? ')
+var question3 = "do you know GCP? "
+var answerThree = "yes" 
+var knowGCP = readlineSync.question(question3)
 console.log('you entered '+knowGCP)
-if(knowGCP === "yes"){
+if(knowGCP === answerThree){
     console.log(knowGCP+' you know GCP')
     score = score + 1
     console.log("Score is " + score)
